@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="es" class="theme-cinematic">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gianmarco Tobalino | Plan de Gobierno Ate 2027-2030 | Partido Patriótico del Perú</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Plan de Gobierno de Gianmarco Tobalino para la Alcaldía de Ate 2027-2030. Propuestas técnicas y viables para la seguridad, áreas verdes, economía e inclusión social.">
+  <meta name="keywords" content="Gianmarco Tobalino, Ate 2026, elecciones municipales Ate, Partido Patriotico del Peru, PPP Ate, seguridad Ate, areas verdes Ate, plan de gobierno Ate">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gianmarco Tobalino | Alcalde de Ate 2027-2030">
+  <meta property="og:description" content="Propuestas sobre seguridad ciudadana, áreas verdes, formalización y desarrollo social en el distrito de Ate.">
+  <meta property="og:image" content="assets/candidato.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gianmarco Tobalino | Alcalde de Ate 2027-2030">
+  <meta name="twitter:description" content="Plan de Gobierno del Partido Patriótico del Perú en Ate.">
+  <meta name="twitter:image" content="assets/candidato.png">
+
+  <!-- Google Fonts (Outfit for Cinematic, Lora for Editorial, Inter for Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;850;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- SELECTOR DE DISEÑO FLOTANTE -->
+  <div class="design-switcher" id="designSwitcher" title="Cambiar propuesta de diseño">
+    <span class="switcher-label">Diseño:</span>
+    <button class="switcher-btn active" id="btnCinematic" data-theme="theme-cinematic">
+      Estilo Moderno
+    </button>
+    <button class="switcher-btn" id="btnEditorial" data-theme="theme-editorial">
+      Estilo Editorial
+    </button>
+  </div>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <span>Partido Patriótico del Perú · Comité Distrital de Ate</span>
+      <span class="topbar-links">
+        <a href="#buzon">Reporte Ciudadano</a> · 
+        <a href="#voluntarios">Voluntariado</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="container nav-container">
+      <a href="#inicio" class="brand">
+        <!-- SVG oficial de PPP -->
+        <svg viewBox="0 0 100 100" class="brand-logo" width="45" height="45">
+          <rect width="100" height="100" fill="#D4182F"/>
+          <circle cx="50" cy="50" r="40" fill="#ffffff"/>
+          <text x="50" y="58" font-family="'Outfit', sans-serif" font-weight="900" font-size="24" fill="#1C222B" text-anchor="middle" letter-spacing="1">PPP</text>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-title">PPP ATE</span>
+          <span class="brand-subtitle">Partido Patriótico del Perú</span>
+        </div>
+      </a>
+      
+      <button class="mobile-menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#inicio" class="nav-link active">Inicio</a>
+        <a href="#candidato" class="nav-link">Candidato</a>
+        <a href="#propuestas" class="nav-link">Propuestas</a>
+        <a href="#ideario" class="nav-link">Ideario</a>
+        <a href="#buzon" class="nav-link">Buzón Vecinal</a>
+        <a href="#voluntarios" class="nav-btn">Unirse</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+      <div class="hero-bg-overlay"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="hero-eyebrow animate-fade">PLAN DE GOBIERNO MUNICIPAL 2027 - 2030</span>
+          <h1 class="hero-title animate-fade">Ate: Ciudad Inteligente, <br><span class="highlight-text">Segura, Verde y Productiva</span></h1>
+          <p class="hero-desc animate-fade">Gianmarco Tobalino Castillo presenta un plan de gestión enfocado en seguridad integral, formalización económica, ampliación de áreas verdes y eficiencia administrativa municipal por resultados.</p>
+          
+          <div class="hero-actions animate-fade">
+            <a href="#propuestas" class="btn btn-primary">Ver Propuestas</a>
+            <a href="#buzon" class="btn btn-secondary">Reportar Incidente</a>
+          </div>
+          
+          <!-- Quick stats -->
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-num" data-val="1000">0</span>
+              <span class="stat-lbl">Cámaras al 2030</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-val="600000" data-suffix=" m²">0</span>
+              <span class="stat-lbl">Nuevas Áreas Verdes</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-val="10000">0</span>
+              <span class="stat-lbl">MYPES Formalizadas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-area animate-fade">
+          <div class="candidate-photo-card">
+            <div class="photo-glow-effect"></div>
+            <img src="assets/foto persona.jpeg" alt="Gianmarco Tobalino" class="candidate-img">
+            <div class="candidate-tag">
+              <h3>Gianmarco Tobalino</h3>
+              <p>Candidato a Alcalde de Ate</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CANDIDATO SECTOR -->
+    <section id="candidato" class="candidato-section scroll-reveal">
+      <div class="container grid-2">
+        <div class="candidato-desc">
+          <span class="section-subtitle">BIOGRAFÍA PROGRAMÁTICA</span>
+          <h2 class="section-title">Gianmarco Valentín Tobalino Castillo</h2>
+          <p class="lead-text">"La gestión municipal propuesta se orienta a reconstruir la confianza ciudadana mediante resultados verificables, control público permanente y la aplicación rigurosa de criterios técnicos de desarrollo urbano."</p>
+          <div class="bio-paragraphs">
+            <p>Vecino comprometido con el distrito de Ate, Gianmarco Tobalino postula a la alcaldía respaldado por el equipo técnico y legal del Partido Patriótico del Perú. Su propuesta rechaza los enfoques meramente declarativos y adopta una planificación basada en la metodología de CEPLAN (Centro Nacional de Planeamiento Estratégico).</p>
+            <p>El plan de gobierno aborda de forma sincera las problemáticas críticas de Ate: un alto índice de delitos patrimoniales, un déficit ambiental severo de áreas verdes por habitante y trabas administrativas para la formalización del motor comercial del distrito.</p>
+          </div>
+          <div class="candidato-badges">
+            <div class="badge">Patriotismo Cívico</div>
+            <div class="badge">Planificación Técnica</div>
+            <div class="badge">Gestión por Resultados</div>
+          </div>
+        </div>
+        <div class="candidato-quote-card">
+          <div class="quote-icon">“</div>
+          <h3>Líneas de Acción:</h3>
+          <p class="quote-text">Cada propuesta del plan cuenta con una estructura de viabilidad: competencia municipal directa, fuente de financiamiento identificada, responsables institucionales definidos y una evaluación trimestral mediante metas físicas anuales.</p>
+          <a href="#voluntarios" class="btn btn-outline-red">Unirse a la Campaña</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROPUESTAS SECTOR (SLIDER DE EJES DE GOBIERNO) -->
+    <section id="propuestas" class="propuestas-section scroll-reveal">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">PROGRAMA PROGRAMÁTICO</span>
+          <h2 class="section-title">Ejes Estratégicos de Gestión</h2>
+          <p class="section-desc">Deslice horizontalmente para recorrer cada eje de gobierno o use los accesos directos superiores.</p>
+        </div>
+
+        <!-- TABS NAV (Direct links to slider index) -->
+        <div class="tabs-nav" id="propuestasTabs">
+          <button class="tab-btn active" data-slide-index="0">
+            Seguridad Ciudadana
+          </button>
+          <button class="tab-btn" data-slide-index="1">
+            Ambiente y Limpieza
+          </button>
+          <button class="tab-btn" data-slide-index="2">
+            Economía y Empleo
+          </button>
+          <button class="tab-btn" data-slide-index="3">
+            Inclusión y Desarrollo
+          </button>
+        </div>
+
+        <!-- MAIN CAROUSEL CONTAINER (SLIDES THE ENTIRE EJE) -->
+        <div class="proposals-main-slider" id="proposalsMainSlider">
+          <div class="proposals-track" id="proposalsTrack">
+            
+            <!-- EJE 1: SEGURIDAD -->
+            <div class="proposals-slide-pane" data-index="0">
+              <div class="pane-header">
+                <span class="pane-badge">EJE 1: SEGURIDAD, CONVIVENCIA E INTELIGENCIA</span>
+                <h3>Ate Seguridad Inteligente</h3>
+                <p>Orientado a reducir la incidencia delictiva y elevar la confianza vecinal mediante tecnología avanzada y patrullaje preventivo.</p>
+              </div>
+              
+              <div class="proposals-grid">
+                <div class="proposal-card">
+                  <span class="card-num">01</span>
+                  <h4>Central Inteligente de Seguridad</h4>
+                  <p>Central operativa 24/7 con georreferenciación, analítica de video, tablero del delito y comunicación directa con la Policía Nacional (PNP). Operativa en 2028.</p>
+                </div>
+                <div class="proposal-card">
+                  <span class="card-num">02</span>
+                  <h4>Ampliación de Videovigilancia</h4>
+                  <p>Incremento de la red de cámaras de 250 a 1,000 dispositivos de vigilancia con IA y reconocimiento facial en paraderos y comercios críticos al 2030.</p>
+                </div>
+                <div class="proposal-card">
+                  <span class="card-num">03</span>
+                  <h4>Bases Descentralizadas</h4>
+                  <p>Implementación de bases de monitoreo y patrullaje en las siete zonas municipales para acortar tiempos de respuesta ante emergencias locales.</p>
+                </div>
+                <div class="proposal-card">
+                  <span class="card-num">04</span>
+                  <h4>Patrullaje con Drones</h4>
+                  <p>Despliegue de 7 drones con operadores autorizados por la DGAC para vigilancia aérea en zonas altas e intersecciones de difícil acceso.</p>
+                </div>
+                <div class="proposal-card">
+                  <span class="card-num">05</span>
+                  <h4>Prevención Juvenil y Familiar</h4>
+                  <p>Escuelas deportivas y talleres culturales integrados con DEMUNA y Barrio Seguro, con la meta de beneficiar a 20,000 jóvenes al 2030.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- EJE 2: MEDIO AMBIENTE -->
+            <div class="proposals-slide-pane" data-index="1">
+              <div class="pane-header">
+                <span class="pane-badge">EJE 2: AMBIENTE, RESIDUOS Y ÁREAS VERDES</span>
+                <h3>Ate Verde 2030 y Resiliencia</h3>
+                <p>Combate al déficit ambiental mediante reforestación sistemática, eliminación de quema de basura y cuidado del río Rímac.</p>
+              </div>
+
+              <div class="proposals-grid">
+                <div class="proposal-card">
+                  <span class="card-num">01</span>
+                  <h4>Recuperación de Áreas Verdes</h4>
+                  <p>Incorporación de 600,000 m² de áreas verdes públicas mediante la rehabilitación de parques locales abandonados y nuevos ecoparques zonales.</p>
+                </div>
+                <div class="proposal-card">
+                  <span class="card-num">02</span>
+                  <h4>Arborización Masiva</h4>
+                  <p>Plantación de 100,000 árboles en avenidas principales y zonas con islas de calor, integrando riego tecnificado con aguas tratadas.</p>
+                </div>
+                <div class="proposal-card">
+                  <span class="card-num">03</span>
+                  <h4>Valorización de Residuos</h4>
+                  <p>Programas integrales de segregación en la fuente, reciclaje y compostaje con la meta de valorizar el 20% de los residuos anuales al 2030.</p>
+                </div>
+                <div class="proposal-card">
+                  <span class="card-num">04</span>
+                  <h4>Erradicación de Quemas</h4>
+                  <p>Fiscalización ambiental estricta con sanciones para la quema de basura y desmonte, optimizando las rutas de recolección en los cerros.</p>
+                </div>
+                <div class="proposal-card">
+                  <span class="card-num">05</span>
+                  <h4>Recuperación de Riberas y Laderas</h4>
+                  <p>Limpieza integral de la cuenca del río Rímac por tramos priorizados, estableciendo fajas marginales seguras y de protección ecológica.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- EJE 3: ECONOMÍA Y EMPLEO -->
+            <div class="proposals-slide-pane" data-index="2">
+              <div class="pane-header">
+                <span class="pane-badge">EJE 3: DESARROLLO ECONÓMICO LOCAL Y EMPLEO</span>
+                <h3>Ate Emprende y Produce</h3>
+                <p>Consolidación del motor comercial del distrito, eliminando barreras burocráticas y promoviendo el empleo para jóvenes.</p>
+              </div>
+
+              <div class="proposals-grid">
+                <div class="proposal-card">
+                  <span class="card-num">01</span>
+                  <h4>Formalización sin Burocracia</h4>
+                  <p>Digitalización de trámites a través de declaración jurada virtual y licencias automáticas para formalizar a 10,000 comercios de bajo riesgo.</p>
+                </div>
+                <div class="proposal-card">
+                  <span class="card-num">02</span>
+                  <h4>Centro de Desarrollo Empresarial</h4>
+                  <p>Capacitación y asistencia técnica contable, legal y de marketing para potenciar la competitividad de 15,000 MYPES del distrito.</p>
+                </div>
+                <div class="proposal-card">
+                  <span class="card-num">03</span>
+                  <h4>Plataforma Hecho en Ate</h4>
+                  <p>Creación del catálogo comercial digital, organización de ferias itinerantes zonales y fomento de ruedas de negocio locales.</p>
+                </div>
+                <div class="proposal-card">
+                  <span class="card-num">04</span>
+                  <h4>Mi Primera Chamba</h4>
+                  <p>Convenios con empresas del corredor industrial de Ate para facilitar prácticas y primer empleo formal a 15,000 jóvenes.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- EJE 4: INCLUSIÓN SOCIAL -->
+            <div class="proposals-slide-pane" data-index="3">
+              <div class="pane-header">
+                <span class="pane-badge">EJE 4: DESARROLLO HUMANO E INCLUSIÓN</span>
+                <h3>Inclusión Social y Salud Preventiva</h3>
+                <p>Plan de cierre de brechas sociales enfocado en el cuidado de la salud mental, el apoyo alimentario y la preparación académica.</p>
+              </div>
+
+              <div class="proposals-grid">
+                <div class="proposal-card">
+                  <span class="card-num">01</span>
+                  <h4>Reconformación del Comité de Damas</h4>
+                  <p>Reactivación del Comité de Damas de la Municipalidad de Ate para ejecutar 80 campañas de salud preventiva y apoyo social directo al 2030.</p>
+                </div>
+                <div class="proposal-card">
+                  <span class="card-num">02</span>
+                  <h4>Salud Mental Descentralizada</h4>
+                  <p>Implementación de consultorios de atención psicológica gratuitos en las siete zonas de desarrollo, en convenio con la DIRIS Lima Este.</p>
+                </div>
+                <div class="proposal-card">
+                  <span class="card-num">03</span>
+                  <h4>Academia Pre Municipal Gratis</h4>
+                  <p>Preparación académica descentralizada y gratuita para beneficiar el ingreso universitario de 10,000 estudiantes destacados de bajos recursos.</p>
+                </div>
+                <div class="proposal-card">
+                  <span class="card-num">04</span>
+                  <h4>Escuela Municipal Inclusiva</h4>
+                  <p>Adaptación del 100% de sedes municipales bajo normas de accesibilidad y programas de inserción laboral para personas con discapacidad (OMAPED).</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CONTROLES DEL DESLIZADOR DE EJES -->
+        <div class="proposals-slider-controls">
+          <button class="slider-control-btn" id="btnPrevEje">Eje Anterior</button>
+          <div class="proposals-slider-dots" id="proposalsSliderDots">
+            <span class="dot active" data-slide-index="0"></span>
+            <span class="dot" data-slide-index="1"></span>
+            <span class="dot" data-slide-index="2"></span>
+            <span class="dot" data-slide-index="3"></span>
+          </div>
+          <button class="slider-control-btn" id="btnNextEje">Eje Siguiente</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VALORES / DOCTRINA PATRIÓTICA -->
+    <section id="ideario" class="ideario-section scroll-reveal">
+      <div class="container text-center">
+        <span class="section-subtitle">PRINCIPIOS DECLARATIVOS</span>
+        <h2 class="section-title">Ideario del Partido Patriótico del Perú</h2>
+        
+        <div class="quote-box" id="quoteContainer">
+          <p class="quote-main" id="idearioQuote">"Patriotismo cívico, servicio al ciudadano, transparencia, integridad y defensa del interés público como pilares esenciales de la administración."</p>
+          <p class="quote-author" id="idearioMeta">— Principios Rectores del Plan de Gobierno PPP Ate</p>
+        </div>
+
+        <button class="btn btn-outline-red" id="btnNextQuote">Ver Principio Siguiente</button>
+      </div>
+    </section>
+
+
+    <!-- DIARIO DE CAMPAÑA -->
+    <section id="diario" class="diario-section scroll-reveal">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">DIARIO DE CAMPAÑA</span>
+          <h2 class="section-title">Gianmarco en la Comunidad</h2>
+          <p class="section-desc">Crónica de actividades, escucha activa y supervisión técnica en los barrios de Ate.</p>
+        </div>
+
+        <div class="diario-grid">
+          <!-- Actividad 1 -->
+          <div class="diario-card">
+            <div class="diario-img-side">
+              <img src="assets/5.jpeg" alt="Inspección técnica de infraestructura" class="diario-img">
+              <span class="diario-tag">TRABAJO DE CAMPO</span>
+            </div>
+            <div class="diario-text-side">
+              <span class="diario-date">12 de Julio, 2026</span>
+              <h3>Inspección de Obras en las Zonas Altas</h3>
+              <p>Supervisión directa de laderas y accesos para proyectar muros de contención viables y escaleras seguras.</p>
+            </div>
+          </div>
+
+          <!-- Actividad 2 -->
+          <div class="diario-card">
+            <div class="diario-img-side">
+              <img src="assets/1.jpeg" alt="Diálogo vecinal" class="diario-img">
+              <span class="diario-tag">ESCUCHA ACTIVA</span>
+            </div>
+            <div class="diario-text-side">
+              <span class="diario-date">08 de Julio, 2026</span>
+              <h3>Diálogo Abierto con los Vecinos</h3>
+              <p>Reunión vecinal para escuchar de primera mano los problemas críticos de seguridad y alumbrado público.</p>
+            </div>
+          </div>
+
+          <!-- Actividad 3 -->
+          <div class="diario-card">
+            <div class="diario-img-side">
+              <img src="assets/3.jpeg" alt="Sustentación del plan de gobierno" class="diario-img">
+              <span class="diario-tag">PLAN DE GOBIERNO</span>
+            </div>
+            <div class="diario-text-side">
+              <span class="diario-date">02 de Julio, 2026</span>
+              <h3>Sustentación de Desarrollo Humano</h3>
+              <p>Exposición técnica de las propuestas para consultorios de salud mental gratuitos y el Comité de Damas.</p>
+            </div>
+          </div>
+
+          <!-- Actividad 4 -->
+          <div class="diario-card">
+            <div class="diario-img-side">
+              <img src="assets/2.jpeg" alt="Encuentro con voluntarios" class="diario-img">
+              <span class="diario-tag">VOLUNTARIADO</span>
+            </div>
+            <div class="diario-text-side">
+              <span class="diario-date">28 de Junio, 2026</span>
+              <h3>Encuentro y Trabajo con Voluntarios</h3>
+              <p>Coordinación con los comités cívicos de jóvenes y vecinos comprometidos con la difusión del plan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUZÓN CIUDADANO (REPORTES) -->
+    <section id="buzon" class="buzon-section scroll-reveal">
+      <div class="container grid-2">
+        <div class="buzon-info">
+          <span class="section-subtitle">MECANISMO DE CONTROL VECINAL</span>
+          <h2 class="section-title">Buzón Ciudadano y Enlace de Reporte</h2>
+          <p>Utiliza este espacio para reportar incidentes del distrito relacionados con inseguridad, acumulación de basura en la vía pública o baches en avenidas principales. La información ayudará a actualizar el mapa local de intervenciones prioritarias.</p>
+          <p class="info-note">Puedes canalizar tu reporte de manera directa usando el celular de la central de campaña o mediante correo electrónico.</p>
+          
+          <div class="direct-contacts">
+            <a href="https://wa.me/51999999999?text=Hola%20Gianmarco%20quiero%20reportar%20un%20problema%20en%20Ate" target="_blank" class="contact-card whatsapp">
+              <span class="contact-icon">💬</span>
+              <div>
+                <h4>Contacto WhatsApp Campaña</h4>
+                <p>+51 999 999 999 (Celular de campaña)</p>
+              </div>
+            </a>
+            <a href="mailto:contacto@pppate.pe?subject=Reporte%20Vecinos%20Ate" class="contact-card email">
+              <span class="contact-icon">✉️</span>
+              <div>
+                <h4>Correo Electrónico Oficial</h4>
+                <p>contacto@pppate.pe</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="buzon-form-container">
+          <form id="vecinoForm" class="vecino-form">
+            <h3 class="form-title">Registrar Incidencia de Vecinos</h3>
+            
+            <div class="form-group">
+              <label for="repNombre">Nombre Completo (Opcional)</label>
+              <input type="text" id="repNombre" placeholder="Ej. Juan Pérez">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="repZona">Zona del Distrito</label>
+                <select id="repZona" required>
+                  <option value="" disabled selected>Selecciona tu zona...</option>
+                  <option value="Zona 1: Salamanca / Olimpo">Zona 1: Salamanca / Olimpo</option>
+                  <option value="Zona 2: Valdiviezo / San Jacinto">Zona 2: Valdiviezo / San Jacinto</option>
+                  <option value="Zona 3: Vitarte Central / Ceres">Zona 3: Vitarte Central / Ceres</option>
+                  <option value="Zona 4: Santa Clara / Los Ángeles">Zona 4: Santa Clara / Los Ángeles</option>
+                  <option value="Zona 5: Manylsa / Mayorazgo">Zona 5: Manylsa / Mayorazgo</option>
+                  <option value="Zona 6: Huaycán">Zona 6: Huaycán</option>
+                  <option value="Zona 7: Pariachi / Horacio Zeballos">Zona 7: Pariachi / Horacio Zeballos</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="repTipo">Rubro del Incidente</label>
+                <select id="repTipo" required>
+                  <option value="" disabled selected>Tipo de problema...</option>
+                  <option value="Seguridad">Inseguridad / Falta de vigilancia</option>
+                  <option value="Limpieza">Acumulación de basura o desmonte</option>
+                  <option value="Areas Verdes">Parque dañado o falta de áreas verdes</option>
+                  <option value="Pistas">Baches en la calzada / Veredas dañadas</option>
+                  <option value="Otros">Otro tipo de problema</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="repMensaje">Descripción del Hecho</label>
+              <textarea id="repMensaje" rows="4" placeholder="Describe brevemente el problema detectado y su ubicación..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Registrar Reporte</button>
+          </form>
+
+          <!-- Report Success View (hidden initially) -->
+          <div id="formSuccessMessage" class="form-success-view">
+            <span class="success-icon">✓</span>
+            <h4>Reporte Registrado</h4>
+            <p>El reporte ha sido procesado por el equipo técnico. Si lo deseas, puedes compartir los datos por WhatsApp para agilizar el análisis.</p>
+            <a href="#" id="btnShareWhatsapp" target="_blank" class="btn btn-whatsapp btn-block">Compartir por WhatsApp</a>
+            <button id="btnResetForm" class="btn btn-text">Registrar otro reporte</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- INTERACTIVE ZONE DIAGNOSIS DASHBOARD -->
+      <div class="container map-container text-center">
+        <h3 class="map-title">Panel de Diagnóstico Territorial de Ate</h3>
+        <p class="map-desc">Selecciona una de las siete zonas del distrito para visualizar las problemáticas críticas identificadas por el equipo técnico y las propuestas específicas de gestión.</p>
+        
+        <div class="map-wrapper grid-2">
+          <!-- Zone List Buttons -->
+          <div class="zone-selector-list" id="zoneSelectorList">
+            <button class="zone-select-btn active" data-zone="Zona 1: Salamanca / Olimpo">
+              <span>Zona 1</span> Salamanca / Olimpo
+            </button>
+            <button class="zone-select-btn" data-zone="Zona 2: Valdiviezo / San Jacinto">
+              <span>Zona 2</span> Valdiviezo / San Jacinto
+            </button>
+            <button class="zone-select-btn" data-zone="Zona 3: Vitarte Central / Ceres">
+              <span>Zona 3</span> Vitarte Central / Ceres
+            </button>
+            <button class="zone-select-btn" data-zone="Zona 4: Santa Clara / Los Ángeles">
+              <span>Zona 4</span> Santa Clara / Los Ángeles
+            </button>
+            <button class="zone-select-btn" data-zone="Zona 5: Manylsa / Mayorazgo">
+              <span>Zona 5</span> Manylsa / Mayorazgo
+            </button>
+            <button class="zone-select-btn" data-zone="Zona 6: Huaycán">
+              <span>Zona 6</span> Huaycán (Alta Prioridad)
+            </button>
+            <button class="zone-select-btn" data-zone="Zona 7: Pariachi / Horacio Zeballos">
+              <span>Zona 7</span> Pariachi / Horacio Zeballos
+            </button>
+          </div>
+
+          <!-- MAP DETAIL CARD -->
+          <div class="map-detail-card" id="mapDetailCard">
+            <span class="card-kicker">SECTOR DE DIAGNÓSTICO</span>
+            <h4 id="zoneName">Zona 1: Salamanca / Olimpo</h4>
+            <p id="zoneDesc">Congestión vial pesada en accesos, necesidad de mantenimiento preventivo de áreas verdes en urbanizaciones y mejora de seguridad en paraderos comerciales.</p>
+            <div class="zone-action-box" id="zoneActionBox">
+              <h5>Acción prioritaria:</h5>
+              <p id="zoneProposedAction">Instalación de la Base N. 1 de Serenazgo, reordenamiento del tránsito en accesos principales e iluminación LED completa de parques y paraderos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WIZARD VOLUNTARIOS (MULTISTEP) -->
+    <section id="voluntarios" class="voluntarios-section scroll-reveal">
+      <div class="container max-width-600">
+        <div class="section-header text-center">
+          <span class="section-subtitle">PARTICIPACIÓN CIUDADANA</span>
+          <h2 class="section-title">Formar parte del Voluntariado</h2>
+          <p class="section-desc">Regístrese para colaborar en las comisiones de trabajo local y difusión de las propuestas en el distrito.</p>
+        </div>
+
+        <div class="wizard-container" id="wizardContainer">
+            <!-- Steps indicators -->
+            <div class="wizard-steps-indicator">
+              <div class="step-indicator active" data-step="1">1</div>
+              <div class="step-indicator" data-step="2">2</div>
+              <div class="step-indicator" data-step="3">3</div>
+            </div>
+
+            <!-- STEP 1: DATOS PERSONALES -->
+            <div class="wizard-step active" id="step1">
+              <h3 class="step-title">Datos Personales</h3>
+              <div class="form-group">
+                <label for="wizNombre">Nombre y Apellido</label>
+                <input type="text" id="wizNombre" placeholder="Ej. Carlos Mendoza" required>
+              </div>
+              <div class="form-row">
+              <div class="form-group">
+                <label for="wizCelular">Celular de Contacto</label>
+                <input type="tel" id="wizCelular" placeholder="Ej. 987654321" required>
+              </div>
+              <div class="form-group">
+                <label for="wizZona">Zona Residencial</label>
+                <select id="wizZona" required>
+                  <option value="" disabled selected>Elige tu zona...</option>
+                  <option value="Huaycán">Huaycán</option>
+                  <option value="Vitarte">Vitarte</option>
+                  <option value="Salamanca">Salamanca</option>
+                  <option value="Santa Clara">Santa Clara</option>
+                  <option value="Otras">Otra zona</option>
+                </select>
+              </div>
+            </div>
+            <div class="wizard-actions">
+              <button class="btn btn-primary btn-next" data-next="step2">Siguiente</button>
+            </div>
+          </div>
+
+          <!-- STEP 2: FORMAS DE AYUDA -->
+          <div class="wizard-step" id="step2">
+            <h3 class="step-title">Comisión de Interés</h3>
+            <p class="step-subtitle">Selecciona las comisiones en las que deseas prestar apoyo voluntario:</p>
+            
+            <div class="checkbox-group">
+              <label class="checkbox-card">
+                <input type="checkbox" name="colaboracion" value="Logistica">
+                <span class="chk-custom"></span>
+                <span class="chk-label">
+                  <strong>Apoyo Logístico y Convocatoria Vecinal</strong>
+                  <span>Colaboración en la organización de comités zonales.</span>
+                </span>
+              </label>
+
+              <label class="checkbox-card">
+                <input type="checkbox" name="colaboracion" value="Redes">
+                <span class="chk-custom"></span>
+                <span class="chk-label">
+                  <strong>Comisión de Difusión Digital</strong>
+                  <span>Apoyo en la comunicación de propuestas en plataformas y redes.</span>
+                </span>
+              </label>
+
+              <label class="checkbox-card">
+                <input type="checkbox" name="colaboracion" value="Vecinal">
+                <span class="chk-custom"></span>
+                <span class="chk-label">
+                  <strong>Mesas de Trabajo Sectorial</strong>
+                  <span>Diagnóstico conjunto con juntas vecinales y organizaciones sociales.</span>
+                </span>
+              </label>
+            </div>
+
+            <div class="wizard-actions">
+              <button class="btn btn-text btn-prev" data-prev="step1">Atrás</button>
+              <button class="btn btn-primary btn-next" data-next="step3">Siguiente</button>
+            </div>
+          </div>
+
+          <!-- STEP 3: CONFIRMACIÓN -->
+          <div class="wizard-step" id="step3">
+            <div class="text-center confirm-view">
+              <h3>Confirmación de Registro</h3>
+              <p>Revisa la información proporcionada antes de confirmar tu registro como colaborador de campaña en el distrito.</p>
+              
+              <div class="summary-box" id="wizardSummary">
+                <!-- Filled by JS -->
+              </div>
+            </div>
+            
+            <div class="wizard-actions">
+              <button class="btn btn-text btn-prev" data-prev="step2">Atrás</button>
+              <button class="btn btn-primary" id="btnSubmitWizard">Confirmar Registro</button>
+            </div>
+          </div>
+
+          <!-- SUCCESS STEP -->
+          <div class="wizard-step" id="stepSuccess">
+            <div class="text-center success-view">
+              <span class="big-success-icon">✓</span>
+              <h3>Registro Completado</h3>
+              <p>Sus datos han sido consolidados por el equipo organizador del Partido Patriótico del Perú en Ate. Nos comunicaremos a la brevedad para coordinar la incorporación a la comisión respectiva.</p>
+              <a href="https://wa.me/51999999999?text=Hola%20Gianmarco%20ya%20me%20inscribi%20como%20voluntario%20por%20la%20web" target="_blank" class="btn btn-primary">Coordinar por WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <!-- SVG oficial de PPP -->
+        <svg viewBox="0 0 100 100" class="brand-logo" width="60" height="60">
+          <rect width="100" height="100" fill="#D4182F"/>
+          <circle cx="50" cy="50" r="40" fill="#ffffff"/>
+          <text x="50" y="58" font-family="'Outfit', sans-serif" font-weight="900" font-size="24" fill="#1C222B" text-anchor="middle" letter-spacing="1">PPP</text>
+        </svg>
+        <p class="footer-desc">Comité Distrital del Partido Patriótico del Perú en Ate. Plan de Gobierno Municipal para el periodo 2027-2030.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <a href="#inicio">Inicio</a>
+        <a href="#candidato">El Candidato</a>
+        <a href="#propuestas">Propuestas de Gobierno</a>
+        <a href="#buzon">Buzón Vecinal</a>
+      </div>
+
+      <div class="footer-contacts">
+        <h4>Contacto del Comité</h4>
+        <p>Av. Nicolás Ayllón 1040, Vitarte, Ate</p>
+        <p>contacto@pppate.pe</p>
+        <p>+51 999 999 999</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 Partido Patriótico del Perú - Comité de Ate. Todos los derechos reservados. Conforme al Plan de Gobierno presentado ante el Jurado Nacional de Elecciones.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
